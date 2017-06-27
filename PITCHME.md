@@ -6,7 +6,7 @@ Created by <a target="_blank" href="http://github.com/takekazuomi">takekazuomi</
 
 ---
 
-## About ten years ago
+## About 7 years ago
 
 I switched from cygwin to PowerShell(posh). I changed my mind.
 
@@ -43,10 +43,11 @@ Following problem is not cause by Posh, cause by Windows. But critical for conso
 - psenv
 - remove-alias -force
 - ConEmu
+- cd bookmark
 
 ---
 
-### [PSReadLine](https://github.com/lzybkr/PSReadLine)
+### <a target="_blank" href="https://github.com/lzybkr/PSReadLine">PSReadLine</a>
 
 A bash inspired readline implementation for PowerShell.
 
@@ -60,7 +61,7 @@ Now PowerShell 5.0 bundle PSReadLine. Good Job!
 
 ---
 
-## [PsEnv](https://github.com/DuFace)
+## <a target="_blank" href="https://github.com/DuFace">PsEnv</a>
 
 Environment variables management cmdlet. For avoid conflict.
 
@@ -78,7 +79,7 @@ use vs150
 
 ---
 
-## [PsEnv](https://github.com/DuFace) + Tab completion
+## <a target="_blank" href="https://github.com/DuFace">PsEnv</a> + Tab completion
 
 I made PR for Tab completion in Feb. 
 
@@ -88,7 +89,7 @@ vs110  vs120  vs140  vs150  vs90
 
 ```
 
-In this case, I use posh [TabExpansion](https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/console/using-tab-expansion).
+In this case, I use posh <a target="_blank" href="https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/console/using-tab-expansion">TabExpansion</a>.
 TabExpansion is powerfull. 🍣
 
 ---
@@ -104,10 +105,39 @@ Remove-Item -Path alias:diff -ErrorAction SilentlyContinue -Force
 
 Make my life happy. 😆😆😆😆
 
+---
+
+## [ConEmu](https://conemu.github.io/)
+
+Windows console emulator with tabs. I use evryday. I love it.
 
 ---
 
-## ConEmu
+## [cd bookmark](https://github.com/takekazuomi/cdbookmark/)
+
+I made directory bookmark cmdlet for save my time. 
+
+Easy to install from [PowerShell Gallery](https://www.powershellgallery.com/packages/Cdbookmark/0.0.4)
+
+```
+Install-Module cdbookmark
+```
+
+bookmark directory.
+
+```
+add-cdbookmark -name foo -value c:\home\foo
+```
+
+change bookmarked directory. cdb is alias of set-cdbookmark
+
+```
+cdb foo
+```
 
 ---
 
+# End
+
+World is not so easy to live. But we can change by code.
+Let's PR.
