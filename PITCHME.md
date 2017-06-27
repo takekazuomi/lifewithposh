@@ -2,17 +2,18 @@
 
 How did I get to live in posh?
 
-Created by [takekazuomi](http://github.com/takekazuomi) / [@takekazuomi](http://twitter.com/takekazuomi)
+Created by <a target="_blank" href="http://github.com/takekazuomi">takekazuomi</a> / <a target="_blank" href="http://twitter.com/takekazuomi">@takekazuomi</a>
 
 ---
 
 ## About ten years ago
 
-   I changed my mind. I switched from cygwin to PowerShell(posh).
+I switched from cygwin to PowerShell(posh). I changed my mind.
 
-   Real Programmers Don't Use cygwin.
+Real Programmers Don't Use cygwin.
 
-   (#｀Д´)ﾉﾉ┻┻;:'､･ﾞ
+
+(#｀Д´)ﾉﾉ┻┻;:'､･ﾞ
 
 
 ---
@@ -24,21 +25,89 @@ Posh is too bad for interactive shell compare to bash.
 - No emacs like keybinding.
 - Too much poor completion.
 - Long command name
-- Broken alias. Example: curl, diff 
+- Broken alias. Example: curl, diff
 
-Following problem is not cause by Posh. cause by Windows. but critical.
+---
+
+## And more
+
+Following problem is not cause by Posh, cause by Windows. But critical for consoler.
 
 - Many many application append own path into PATH environment.
 
 ---
 
-## For ten years since then, I survived.
+### For ten years since then, I survived. Because ..
 
-Survival tool
-
-- psreadline 
+- PSReadLine
 - psenv
 - remove-alias -force
+- ConEmu
+
+---
+
+### [PSReadLine](https://github.com/lzybkr/PSReadLine)
+
+A bash inspired readline implementation for PowerShell.
+
+```
+Set-PSReadlineOption -EditMode Emacs
+```
+
+Extreamly superb cmdlet. I have no life without this. Something like beer. 🍻
+
+Now PowerShell 5.0 bundle PSReadLine. Good Job!
+
+---
+
+## [PsEnv](https://github.com/DuFace)
+
+Environment variables management cmdlet. For avoid conflict.
+
+For ex. In my default console don't include any VisualStudio PATH. After start posh, execute following command for set VS environment.
+
+```
+use vs140
+```
+
+When I want vs 2017.
+
+```
+use vs150
+```
+
+---
+
+## [PsEnv](https://github.com/DuFace) + Tab completion
+
+I made PR for Tab completion in Feb. 
+
+```
+use vs<tab>
+vs110  vs120  vs140  vs150  vs90
+
+```
+
+In this case, I use posh [TabExpansion](https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/console/using-tab-expansion).
+TabExpansion is powerfull. 🍣
+
+---
+
+## remove-alias -force
+
+Just remove broken alias in Microsoft.PowerShell_profile.ps1. 
+
+```
+Remove-Item -Path alias:curl -ErrorAction SilentlyContinue -Force
+Remove-Item -Path alias:diff -ErrorAction SilentlyContinue -Force
+```
+
+Make my life happy. 😆😆😆😆
+
+
+---
+
+## ConEmu
 
 ---
 
