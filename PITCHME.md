@@ -156,7 +156,7 @@ I use evryday. I love it. <3 <3 <3
 
 I made directory bookmark cmdlet for save my time. 
 
-Easy to install from <a target="_blank" href="https://www.powershellgallery.com/packages/Cdbookmark/0.0.4">PowerShell Gallery</a>
+Easy to install from <a target="_blank" href="https://www.powershellgallery.com/packages/posh-cdbookmark/0.0.5">PowerShell Gallery</a>
 
 ```
 Install-Module cdbookmark
