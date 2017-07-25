@@ -41,10 +41,10 @@ and more
 
 ---
 
-## Why not Bash On Windows.
+## Why not Bash On Windows?
 (WSL)
 
-At that time it was not there.
+At that time, it was not there.
 
 orz....
 
@@ -52,9 +52,9 @@ orz....
 
 ## A hard life began
 
-Posh is too bad for interactive shell compare to bash.
+Posh is too bad for interactive shell comparison to bash.
 
-- No emacs like keybinding.
+- No emacs-like key bindings.
 - Too much poor completion.
 - Long command name
 - Broken alias. Example: curl, diff
@@ -63,24 +63,24 @@ Posh is too bad for interactive shell compare to bash.
 ## and more
 ## PATH HELL
 
-- Many many application append own path into PATH environment.
+- Many many applications append own path into PATH environment.
 
-Problem is not cause by Posh, it's by Windows. 
+The Problem is not caused by Posh, it's by Windows. 
 
-But critical for console favorite people.
+However it is critical for console favorite people.
 
 I call this "PATH Hell". It is something like [DLL Hell](https://en.wikipedia.org/wiki/DLL_Hell)
 
 ---
 
-### For ten years since, I survived. Because ..
+### For seven years, I has been survive. Because ... 
 
 - PSReadLine
 - psenv
 - remove-alias -force
 - ConEmu
-- cd bookmark(homemade)
-- ps envdir(homemade)
+- cd bookmark (homemade)
+- ps envdir (homemade)
 
 ---
 
@@ -102,7 +102,7 @@ Now PowerShell 5.0 bundle PSReadLine. Good Job!
 
 Environment variables management cmdlet. For avoid conflict.
 
-For ex. In my default console don't include any VisualStudio PATH. After start posh, execute following command for set VS environment.
+For ex. In my default console dosen't include any VisualStudio PATH. After start posh, execute following command for set VS environment.
 
 ```
 use vs140
@@ -154,7 +154,7 @@ I use evryday. I love it. <3 <3 <3
 
 ## <a target="_blank" href="https://github.com/takekazuomi/cdbookmark/">cd bookmark</a>
 
-I made directory bookmark cmdlet for save my time. 
+I made directory bookmark cmdlet to save my time. 
 
 Easy to install from <a target="_blank" href="https://www.powershellgallery.com/packages/posh-cdbookmark/0.0.5">PowerShell Gallery</a>
 
@@ -178,7 +178,7 @@ cdb foo
 
 ## [posh direnv](https://github.com/takekazuomi/posh-direnv)
 
-I made environment switcher for the PowerShell. It's help easy to add environment variable depend on directry.
+I made environment switcher for the PowerShell. It's add environment variable which depend on directory.
 
 Easy to install from PowerShell Gallery [posh-direnv](https://www.powershellgallery.com/packages/posh-direnv/0.0.2)
 
@@ -193,5 +193,5 @@ Start new posh session and cd demo then execute ".psenvrc"
 
 # End
 
-World is not so easy to live. But we can change by code.
+World is not so easy to live. However we can change by code.
 Let's OSS and PR.
