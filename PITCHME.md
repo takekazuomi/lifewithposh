@@ -1,20 +1,52 @@
 # Life with posh
 
-How did I get to live in posh?
+- How did I get to live in posh?
+- Posh as an interactive shell.
 
 Created by <a target="_blank" href="http://github.com/takekazuomi">takekazuomi</a> / <a target="_blank" href="http://twitter.com/takekazuomi">@takekazuomi</a>
 
 ---
 
-## About 7 years ago
+## Who am I?
 
-I switched from cygwin to PowerShell(posh). I changed my mind.
+Takekazu Omi
 
-Real Programmers Don't Use cygwin.
+Developer @kyrt, inc. (own company)
+
+Microsoft MVP for Azure.
+
+---
+
+## About 7 years ago. 
+(in 2010)
+
+I switched from cygwin to PowerShell (posh). 
+
+I changed my mind.
+
+Real Programmers DON'T USE cygwin.
 
 
 (#｀Д´)ﾉﾉ┻┻;:'､･ﾞ
 
+---
+
+## Why not cygwin.
+
+- broken fork
+- peer performance
+- native exe compatibility
+
+and more 
+
+---
+
+## Why not Bash On Windows.
+(WSL)
+
+At that time it was not there.
+
+orz....
 
 ---
 
@@ -28,22 +60,27 @@ Posh is too bad for interactive shell compare to bash.
 - Broken alias. Example: curl, diff
 
 ---
-
-## And more
-
-Following problem is not cause by Posh, cause by Windows. But critical for consoler.
+## and more
+## PATH HELL
 
 - Many many application append own path into PATH environment.
 
+Problem is not cause by Posh, it's by Windows. 
+
+But critical for console favorite people.
+
+I call this "PATH Hell". It is something like [DLL Hell](https://en.wikipedia.org/wiki/DLL_Hell)
+
 ---
 
-### For ten years since then, I survived. Because ..
+### For ten years since, I survived. Because ..
 
 - PSReadLine
 - psenv
 - remove-alias -force
 - ConEmu
-- cd bookmark
+- cd bookmark(homemade)
+- ps envdir(homemade)
 
 ---
 
@@ -107,17 +144,19 @@ Make my life happy. 😆😆😆😆
 
 ---
 
-## [ConEmu](https://conemu.github.io/)
+## <a target="_blank" href="https://conemu.github.io/">ConEmu</a>
 
-Windows console emulator with tabs. I use evryday. I love it.
+Windows console emulator with tabs. 
+
+I use evryday. I love it. <3 <3 <3
 
 ---
 
-## [cd bookmark](https://github.com/takekazuomi/cdbookmark/)
+## <a target="_blank" href="https://github.com/takekazuomi/cdbookmark/">cd bookmark</a>
 
 I made directory bookmark cmdlet for save my time. 
 
-Easy to install from [PowerShell Gallery](https://www.powershellgallery.com/packages/Cdbookmark/0.0.4)
+Easy to install from <a target="_blank" href="https://www.powershellgallery.com/packages/Cdbookmark/0.0.4">PowerShell Gallery</a>
 
 ```
 Install-Module cdbookmark
@@ -137,7 +176,22 @@ cdb foo
 
 ---
 
+## [posh direnv](https://github.com/takekazuomi/posh-direnv)
+
+I made environment switcher for the PowerShell. It's help easy to add environment variable depend on directry.
+
+Easy to install from PowerShell Gallery [posh-direnv](https://www.powershellgallery.com/packages/posh-direnv/0.0.2)
+
+```
+cd demo
+Edit-DirEnvRc
+```
+
+Start new posh session and cd demo then execute ".psenvrc"
+
+---
+
 # End
 
 World is not so easy to live. But we can change by code.
-Let's PR.
+Let's OSS and PR.
